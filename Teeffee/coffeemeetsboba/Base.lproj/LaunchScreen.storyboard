@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Caveat-Regular.ttf">
+            <string>Caveat-Regular</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud" translatesAutoresizingMaskIntoConstraints="NO" id="eCR-yM-R04">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Idq-Qc-EV3">
+                                <rect key="frame" x="0.0" y="43.999999999999986" width="375" height="243.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So glad to have you join us!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-Di-MdQ">
+                                        <rect key="frame" x="0.0" y="99.333333333333343" width="375" height="45"/>
+                                        <fontDescription key="fontDescription" name="Caveat-Regular" family="Caveat" pointSize="35"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wlP-Di-MdQ" firstAttribute="centerX" secondItem="Idq-Qc-EV3" secondAttribute="centerX" id="HES-F8-POh"/>
+                                    <constraint firstItem="wlP-Di-MdQ" firstAttribute="width" secondItem="Idq-Qc-EV3" secondAttribute="width" id="Umm-75-cXD"/>
+                                    <constraint firstItem="wlP-Di-MdQ" firstAttribute="centerY" secondItem="Idq-Qc-EV3" secondAttribute="centerY" id="dSC-Ig-8EI"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO - Round" translatesAutoresizingMaskIntoConstraints="NO" id="pib-Ek-tvG">
+                                <rect key="frame" x="112.66666666666669" y="327.66666666666669" width="150" height="167"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="707-GQ-PYQ">
+                                <rect key="frame" x="0.0" y="534.33333333333337" width="375" height="243.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In faucibus lectus sed nibh iaculis pulvinar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-n3-YQw">
+                                        <rect key="frame" x="0.0" y="90.666666666666629" width="375" height="62.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2mh-n3-YQw" firstAttribute="centerX" secondItem="707-GQ-PYQ" secondAttribute="centerX" id="Sjk-uA-zyY"/>
+                                    <constraint firstItem="2mh-n3-YQw" firstAttribute="width" secondItem="707-GQ-PYQ" secondAttribute="width" id="m71-iH-Dbt"/>
+                                    <constraint firstItem="2mh-n3-YQw" firstAttribute="centerY" secondItem="707-GQ-PYQ" secondAttribute="centerY" id="uXB-fm-pVO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Idq-Qc-EV3" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="0Vg-Jo-l8K"/>
+                            <constraint firstItem="Idq-Qc-EV3" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="NA6-jd-Hjj"/>
+                            <constraint firstItem="pib-Ek-tvG" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.4" id="QMt-4e-6jj"/>
+                            <constraint firstItem="707-GQ-PYQ" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="SmH-nG-pQU"/>
+                            <constraint firstItem="Idq-Qc-EV3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TvA-pj-vCZ"/>
+                            <constraint firstItem="707-GQ-PYQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YKB-Zl-hYb"/>
+                            <constraint firstItem="pib-Ek-tvG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="htB-Pw-FSo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="707-GQ-PYQ" secondAttribute="bottom" id="jlE-el-mXm"/>
+                            <constraint firstItem="eCR-yM-R04" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kbK-PL-OY1"/>
+                            <constraint firstItem="eCR-yM-R04" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lww-h0-HrX"/>
+                            <constraint firstItem="pib-Ek-tvG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nBG-p4-hpL"/>
+                            <constraint firstItem="eCR-yM-R04" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="orT-KF-YDU"/>
+                            <constraint firstItem="eCR-yM-R04" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="z61-3Q-LEQ"/>
+                            <constraint firstItem="707-GQ-PYQ" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="zj0-HT-tkn"/>
+                            <constraint firstItem="Idq-Qc-EV3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zt4-dw-FhY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LOGO - Round" width="158" height="167"/>
+        <image name="backgroud" width="375" height="732"/>
+    </resources>
+</document>
