@@ -22,11 +22,6 @@ class ChatMessageFactory {
         let messageStatus = isIncoming || success ? MessageStatus.success : .failed
         return MessageModel(uid: uid, senderId: senderId, type: type, isIncoming: isIncoming, date: Date(), status: messageStatus)
     }
-//    class func makePhotoMessage(_ uid: String, image: UIImage, size: CGSize, isIncoming: Bool) -> ToffeePhotoMessageModel {
-//        let messageModel = self.makeMessageModel(uid, isIncoming: isIncoming, type: PhotoMessageModel<MessageModel>.chatItemType)
-//        let photoMessageModel = ToffeePhotoMessageModel(messageModel: messageModel, imageSize: size, image: image)
-//        return photoMessageModel
-//    }
 }
 extension TextMessageModel {
     static var chatItemType: ChatItemType {
