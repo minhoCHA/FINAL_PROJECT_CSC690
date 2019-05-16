@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5F9394226AE0CB00CF616F /* ChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F9393226AE0CB00CF616F /* ChatDataSource.swift */; };
+		0B5F9396226AE5B800CF616F /* SlidingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F9395226AE5B800CF616F /* SlidingDataSource.swift */; };
+		0B5F9398226AE99900CF616F /* ChatMessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F9397226AE99900CF616F /* ChatMessageFactory.swift */; };
+		0B5F939A226AEC9F00CF616F /* ToffeeTextMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F9399226AEC9F00CF616F /* ToffeeTextMessageViewModel.swift */; };
+		0B5F939C226AEF0300CF616F /* ToffeeTextMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F939B226AEF0300CF616F /* ToffeeTextMessageModel.swift */; };
+		0B8065992256DDA400E41FF6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8065982256DDA400E41FF6 /* MapViewController.swift */; };
+		0B80659B2256DDCB00E41FF6 /* FindPeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80659A2256DDCB00E41FF6 /* FindPeerViewController.swift */; };
+		0B80659D2256DDF400E41FF6 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80659C2256DDF400E41FF6 /* ChatService.swift */; };
+		0B80659F225B5DF600E41FF6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80659E225B5DF600E41FF6 /* ChatViewController.swift */; };
+		0BF4A57E226FCF6E003EAAC6 /* ChatMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A57D226FCF6E003EAAC6 /* ChatMessageSender.swift */; };
+		0BF4A582226FEE21003EAAC6 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A581226FEE21003EAAC6 /* BaseMessageCollectionViewCellAvatarStyle.swift */; };
+		0BF4A584226FF08C003EAAC6 /* GenericMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A583226FF08C003EAAC6 /* GenericMessageHandler.swift */; };
+		0BF4A586226FF0CB003EAAC6 /* BaseMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A585226FF0CB003EAAC6 /* BaseMessageHandler.swift */; };
+		0BF4A588226FF13D003EAAC6 /* MessagesSelectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A587226FF13D003EAAC6 /* MessagesSelectorProtocol.swift */; };
+		0BF4A58A226FF1C0003EAAC6 /* BaseMessagesSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A589226FF1C0003EAAC6 /* BaseMessagesSelector.swift */; };
+		0BF4A58C226FF352003EAAC6 /* ToffeeChatItemsDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF4A58B226FF352003EAAC6 /* ToffeeChatItemsDecorator.swift */; };
+		0C29E63D989187ED12C87C24 /* Pods_coffeemeetsboba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE90F024DFB5DD3D2DA89AB /* Pods_coffeemeetsboba.framework */; };
+		5E3746A2227B88D100D65473 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3746A1227B88D000D65473 /* PopupViewController.swift */; };
+		5E3746A5227BE94200D65473 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E3746A4227BE94200D65473 /* Montserrat-SemiBold.ttf */; };
+		5E3746A6227BE94800D65473 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E3746A3227BE88700D65473 /* Montserrat-Bold.ttf */; };
+		5E5D023D225FFF7200CBAEDB /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D023C225FFF7100CBAEDB /* OverlayView.xib */; };
+		5E5D024122691A1300CBAEDB /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D024022691A1300CBAEDB /* Montserrat */; };
+		5E5D02452269241400CBAEDB /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D02442269241400CBAEDB /* Montserrat-Black.ttf */; };
+		5E5D02472269242100CBAEDB /* Caveat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D02462269241D00CBAEDB /* Caveat-Regular.ttf */; };
+		5E5D0249226924A600CBAEDB /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E5D0248226924A200CBAEDB /* Montserrat-Regular.ttf */; };
+		5E788C332244A2DF00D0D00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E788C322244A2DF00D0D00A /* AppDelegate.swift */; };
+		5E788C352244A2DF00D0D00A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E788C342244A2DF00D0D00A /* ViewController.swift */; };
+		5E788C382244A2DF00D0D00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E788C362244A2DF00D0D00A /* Main.storyboard */; };
+		5E788C3A2244A2E500D0D00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E788C392244A2E500D0D00A /* Assets.xcassets */; };
+		5E788C3D2244A2E500D0D00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E788C3B2244A2E500D0D00A /* LaunchScreen.storyboard */; };
+		5E788C482244A2E700D0D00A /* coffeemeetsbobaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E788C472244A2E700D0D00A /* coffeemeetsbobaTests.swift */; };
+		5E788C532244A2E700D0D00A /* coffeemeetsbobaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E788C522244A2E700D0D00A /* coffeemeetsbobaUITests.swift */; };
+		5E788C7B2248423900D0D00A /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E788C7A2248423900D0D00A /* YelpClient.swift */; };
+		5E788C7E2248429800D0D00A /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E788C7D2248429800D0D00A /* Business.swift */; };
+		5EB5DFD22255756D000ECCD0 /* todaysPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5DFD12255756D000ECCD0 /* todaysPickViewController.swift */; };
+		5EB5DFD4225BE90C000ECCD0 /* restaurantDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5DFD3225BE90B000ECCD0 /* restaurantDisplayViewController.swift */; };
+		F3427A00A8DABDDA2E710B03 /* Pods_coffeemeetsbobaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1585231BC61602538D7C149 /* Pods_coffeemeetsbobaTests.framework */; };
+		FB4309A057EB87EE07E5B2A9 /* Pods_coffeemeetsbobaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F287887BCCBAA392881948BD /* Pods_coffeemeetsbobaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E788C442244A2E700D0D00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E788C272244A2DF00D0D00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E788C2E2244A2DF00D0D00A;
+			remoteInfo = coffeemeetsboba;
+		};
+		5E788C4F2244A2E700D0D00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E788C272244A2DF00D0D00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E788C2E2244A2DF00D0D00A;
+			remoteInfo = coffeemeetsboba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B5F9393226AE0CB00CF616F /* ChatDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataSource.swift; sourceTree = "<group>"; };
+		0B5F9395226AE5B800CF616F /* SlidingDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingDataSource.swift; sourceTree = "<group>"; };
+		0B5F9397226AE99900CF616F /* ChatMessageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageFactory.swift; sourceTree = "<group>"; };
+		0B5F9399226AEC9F00CF616F /* ToffeeTextMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToffeeTextMessageViewModel.swift; sourceTree = "<group>"; };
+		0B5F939B226AEF0300CF616F /* ToffeeTextMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToffeeTextMessageModel.swift; sourceTree = "<group>"; };
+		0B8065982256DDA400E41FF6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0B80659A2256DDCB00E41FF6 /* FindPeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeerViewController.swift; sourceTree = "<group>"; };
+		0B80659C2256DDF400E41FF6 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		0B80659E225B5DF600E41FF6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0BF4A57D226FCF6E003EAAC6 /* ChatMessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageSender.swift; sourceTree = "<group>"; };
+		0BF4A581226FEE21003EAAC6 /* BaseMessageCollectionViewCellAvatarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMessageCollectionViewCellAvatarStyle.swift; sourceTree = "<group>"; };
+		0BF4A583226FF08C003EAAC6 /* GenericMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericMessageHandler.swift; sourceTree = "<group>"; };
+		0BF4A585226FF0CB003EAAC6 /* BaseMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMessageHandler.swift; sourceTree = "<group>"; };
+		0BF4A587226FF13D003EAAC6 /* MessagesSelectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesSelectorProtocol.swift; sourceTree = "<group>"; };
+		0BF4A589226FF1C0003EAAC6 /* BaseMessagesSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMessagesSelector.swift; sourceTree = "<group>"; };
+		0BF4A58B226FF352003EAAC6 /* ToffeeChatItemsDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToffeeChatItemsDecorator.swift; sourceTree = "<group>"; };
+		258C0E61600344DB24CDD4DA /* Pods-coffeemeetsboba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeemeetsboba.release.xcconfig"; path = "Target Support Files/Pods-coffeemeetsboba/Pods-coffeemeetsboba.release.xcconfig"; sourceTree = "<group>"; };
+		2AE90F024DFB5DD3D2DA89AB /* Pods_coffeemeetsboba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coffeemeetsboba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32318BE3AB302C3DB9998CA1 /* Pods-coffeemeetsboba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeemeetsboba.debug.xcconfig"; path = "Target Support Files/Pods-coffeemeetsboba/Pods-coffeemeetsboba.debug.xcconfig"; sourceTree = "<group>"; };
+		46DB0A19CCA6F6414ED0527F /* Pods-coffeemeetsbobaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeemeetsbobaUITests.debug.xcconfig"; path = "Target Support Files/Pods-coffeemeetsbobaUITests/Pods-coffeemeetsbobaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E3746A1227B88D000D65473 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		5E3746A3227BE88700D65473 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		5E3746A4227BE94200D65473 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		5E5D023C225FFF7100CBAEDB /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
+		5E5D024022691A1300CBAEDB /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
+		5E5D02442269241400CBAEDB /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		5E5D02462269241D00CBAEDB /* Caveat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-Regular.ttf"; sourceTree = "<group>"; };
+		5E5D0248226924A200CBAEDB /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		5E5D024B22693E9C00CBAEDB /* Caveat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-Bold.ttf"; sourceTree = "<group>"; };
+		5E5D024C22693E9C00CBAEDB /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		5E788C2F2244A2DF00D0D00A /* coffeemeetsboba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeemeetsboba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E788C322244A2DF00D0D00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E788C342244A2DF00D0D00A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E788C372244A2DF00D0D00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E788C392244A2E500D0D00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E788C3C2244A2E500D0D00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E788C3E2244A2E500D0D00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E788C432244A2E700D0D00A /* coffeemeetsbobaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeemeetsbobaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E788C472244A2E700D0D00A /* coffeemeetsbobaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeemeetsbobaTests.swift; sourceTree = "<group>"; };
+		5E788C492244A2E700D0D00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E788C4E2244A2E700D0D00A /* coffeemeetsbobaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coffeemeetsbobaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E788C522244A2E700D0D00A /* coffeemeetsbobaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeemeetsbobaUITests.swift; sourceTree = "<group>"; };
+		5E788C542244A2E700D0D00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E788C7A2248423900D0D00A /* YelpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
+		5E788C7D2248429800D0D00A /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		5EB5DFD12255756D000ECCD0 /* todaysPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todaysPickViewController.swift; sourceTree = "<group>"; };
+		5EB5DFD3225BE90B000ECCD0 /* restaurantDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantDisplayViewController.swift; sourceTree = "<group>"; };
+		DA7BFBB03C6A9497D6B6F43B /* Pods-coffeemeetsbobaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeemeetsbobaTests.debug.xcconfig"; path = "Target Support Files/Pods-coffeemeetsbobaTests/Pods-coffeemeetsbobaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1585231BC61602538D7C149 /* Pods_coffeemeetsbobaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coffeemeetsbobaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F287887BCCBAA392881948BD /* Pods_coffeemeetsbobaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coffeemeetsbobaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32A0C116D846E1E3AC3AEF2 /* Pods-coffeemeetsbobaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeemeetsbobaTests.release.xcconfig"; path = "Target Support Files/Pods-coffeemeetsbobaTests/Pods-coffeemeetsbobaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCF61180B6BC078813167ADA /* Pods-coffeemeetsbobaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coffeemeetsbobaUITests.release.xcconfig"; path = "Target Support Files/Pods-coffeemeetsbobaUITests/Pods-coffeemeetsbobaUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E788C2C2244A2DF00D0D00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C29E63D989187ED12C87C24 /* Pods_coffeemeetsboba.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E788C402244A2E700D0D00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3427A00A8DABDDA2E710B03 /* Pods_coffeemeetsbobaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E788C4B2244A2E700D0D00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4309A057EB87EE07E5B2A9 /* Pods_coffeemeetsbobaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E5D0243226923EB00CBAEDB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D024A22693E9C00CBAEDB /* Caveat */,
+				5E5D024022691A1300CBAEDB /* Montserrat */,
+				5E5D02462269241D00CBAEDB /* Caveat-Regular.ttf */,
+				5E3746A3227BE88700D65473 /* Montserrat-Bold.ttf */,
+				5E5D0248226924A200CBAEDB /* Montserrat-Regular.ttf */,
+				5E3746A4227BE94200D65473 /* Montserrat-SemiBold.ttf */,
+				5E5D02442269241400CBAEDB /* Montserrat-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5E5D024A22693E9C00CBAEDB /* Caveat */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D024B22693E9C00CBAEDB /* Caveat-Bold.ttf */,
+				5E5D024C22693E9C00CBAEDB /* OFL.txt */,
+			);
+			path = Caveat;
+			sourceTree = "<group>";
+		};
+		5E788C262244A2DF00D0D00A = {
+			isa = PBXGroup;
+			children = (
+				5E788C312244A2DF00D0D00A /* coffeemeetsboba */,
+				5E788C462244A2E700D0D00A /* coffeemeetsbobaTests */,
+				5E788C512244A2E700D0D00A /* coffeemeetsbobaUITests */,
+				5E788C302244A2DF00D0D00A /* Products */,
+				E3C5B93AA94594DF6B86852B /* Pods */,
+				DB2CFF75DD116E0D0DFFC93C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E788C302244A2DF00D0D00A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E788C2F2244A2DF00D0D00A /* coffeemeetsboba.app */,
+				5E788C432244A2E700D0D00A /* coffeemeetsbobaTests.xctest */,
+				5E788C4E2244A2E700D0D00A /* coffeemeetsbobaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E788C312244A2DF00D0D00A /* coffeemeetsboba */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D0243226923EB00CBAEDB /* Fonts */,
+				5E788C7C2248427000D0D00A /* Models */,
+				5E788C792248420800D0D00A /* API */,
+				5E788C322244A2DF00D0D00A /* AppDelegate.swift */,
+				5EB5DFD3225BE90B000ECCD0 /* restaurantDisplayViewController.swift */,
+				5E5D023C225FFF7100CBAEDB /* OverlayView.xib */,
+				5E788C342244A2DF00D0D00A /* ViewController.swift */,
+				5E788C362244A2DF00D0D00A /* Main.storyboard */,
+				0B80659E225B5DF600E41FF6 /* ChatViewController.swift */,
+				5EB5DFD12255756D000ECCD0 /* todaysPickViewController.swift */,
+				5E3746A1227B88D000D65473 /* PopupViewController.swift */,
+				5E788C392244A2E500D0D00A /* Assets.xcassets */,
+				5E788C3B2244A2E500D0D00A /* LaunchScreen.storyboard */,
+				5E788C3E2244A2E500D0D00A /* Info.plist */,
+				0B8065982256DDA400E41FF6 /* MapViewController.swift */,
+				0B80659A2256DDCB00E41FF6 /* FindPeerViewController.swift */,
+			);
+			path = coffeemeetsboba;
+			sourceTree = "<group>";
+		};
+		5E788C462244A2E700D0D00A /* coffeemeetsbobaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E788C472244A2E700D0D00A /* coffeemeetsbobaTests.swift */,
+				5E788C492244A2E700D0D00A /* Info.plist */,
+			);
+			path = coffeemeetsbobaTests;
+			sourceTree = "<group>";
+		};
+		5E788C512244A2E700D0D00A /* coffeemeetsbobaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E788C522244A2E700D0D00A /* coffeemeetsbobaUITests.swift */,
+				5E788C542244A2E700D0D00A /* Info.plist */,
+			);
+			path = coffeemeetsbobaUITests;
+			sourceTree = "<group>";
+		};
+		5E788C792248420800D0D00A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5E788C7A2248423900D0D00A /* YelpClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5E788C7C2248427000D0D00A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B80659C2256DDF400E41FF6 /* ChatService.swift */,
+				5E788C7D2248429800D0D00A /* Business.swift */,
+				0B5F9393226AE0CB00CF616F /* ChatDataSource.swift */,
+				0B5F9395226AE5B800CF616F /* SlidingDataSource.swift */,
+				0B5F9397226AE99900CF616F /* ChatMessageFactory.swift */,
+				0B5F9399226AEC9F00CF616F /* ToffeeTextMessageViewModel.swift */,
+				0B5F939B226AEF0300CF616F /* ToffeeTextMessageModel.swift */,
+				0BF4A57D226FCF6E003EAAC6 /* ChatMessageSender.swift */,
+				0BF4A581226FEE21003EAAC6 /* BaseMessageCollectionViewCellAvatarStyle.swift */,
+				0BF4A583226FF08C003EAAC6 /* GenericMessageHandler.swift */,
+				0BF4A585226FF0CB003EAAC6 /* BaseMessageHandler.swift */,
+				0BF4A587226FF13D003EAAC6 /* MessagesSelectorProtocol.swift */,
+				0BF4A589226FF1C0003EAAC6 /* BaseMessagesSelector.swift */,
+				0BF4A58B226FF352003EAAC6 /* ToffeeChatItemsDecorator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB2CFF75DD116E0D0DFFC93C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AE90F024DFB5DD3D2DA89AB /* Pods_coffeemeetsboba.framework */,
+				E1585231BC61602538D7C149 /* Pods_coffeemeetsbobaTests.framework */,
+				F287887BCCBAA392881948BD /* Pods_coffeemeetsbobaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3C5B93AA94594DF6B86852B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32318BE3AB302C3DB9998CA1 /* Pods-coffeemeetsboba.debug.xcconfig */,
+				258C0E61600344DB24CDD4DA /* Pods-coffeemeetsboba.release.xcconfig */,
+				DA7BFBB03C6A9497D6B6F43B /* Pods-coffeemeetsbobaTests.debug.xcconfig */,
+				F32A0C116D846E1E3AC3AEF2 /* Pods-coffeemeetsbobaTests.release.xcconfig */,
+				46DB0A19CCA6F6414ED0527F /* Pods-coffeemeetsbobaUITests.debug.xcconfig */,
+				FCF61180B6BC078813167ADA /* Pods-coffeemeetsbobaUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E788C2E2244A2DF00D0D00A /* coffeemeetsboba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E788C572244A2E700D0D00A /* Build configuration list for PBXNativeTarget "coffeemeetsboba" */;
+			buildPhases = (
+				8F159B2EA980FD415DB823CA /* [CP] Check Pods Manifest.lock */,
+				5E788C2B2244A2DF00D0D00A /* Sources */,
+				5E788C2C2244A2DF00D0D00A /* Frameworks */,
+				5E788C2D2244A2DF00D0D00A /* Resources */,
+				395DAB3C800018ABAA6CAA3E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coffeemeetsboba;
+			productName = coffeemeetsboba;
+			productReference = 5E788C2F2244A2DF00D0D00A /* coffeemeetsboba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E788C422244A2E700D0D00A /* coffeemeetsbobaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E788C5A2244A2E700D0D00A /* Build configuration list for PBXNativeTarget "coffeemeetsbobaTests" */;
+			buildPhases = (
+				6071F545F1B800D0DF17AED7 /* [CP] Check Pods Manifest.lock */,
+				5E788C3F2244A2E700D0D00A /* Sources */,
+				5E788C402244A2E700D0D00A /* Frameworks */,
+				5E788C412244A2E700D0D00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E788C452244A2E700D0D00A /* PBXTargetDependency */,
+			);
+			name = coffeemeetsbobaTests;
+			productName = coffeemeetsbobaTests;
+			productReference = 5E788C432244A2E700D0D00A /* coffeemeetsbobaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E788C4D2244A2E700D0D00A /* coffeemeetsbobaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E788C5D2244A2E700D0D00A /* Build configuration list for PBXNativeTarget "coffeemeetsbobaUITests" */;
+			buildPhases = (
+				EAB7269B9D45A1B0D7B67A55 /* [CP] Check Pods Manifest.lock */,
+				5E788C4A2244A2E700D0D00A /* Sources */,
+				5E788C4B2244A2E700D0D00A /* Frameworks */,
+				5E788C4C2244A2E700D0D00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E788C502244A2E700D0D00A /* PBXTargetDependency */,
+			);
+			name = coffeemeetsbobaUITests;
+			productName = coffeemeetsbobaUITests;
+			productReference = 5E788C4E2244A2E700D0D00A /* coffeemeetsbobaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E788C272244A2DF00D0D00A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = aliceyang;
+				TargetAttributes = {
+					5E788C2E2244A2DF00D0D00A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5E788C422244A2E700D0D00A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5E788C2E2244A2DF00D0D00A;
+					};
+					5E788C4D2244A2E700D0D00A = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5E788C2E2244A2DF00D0D00A;
+					};
+				};
+			};
+			buildConfigurationList = 5E788C2A2244A2DF00D0D00A /* Build configuration list for PBXProject "coffeemeetsboba" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E788C262244A2DF00D0D00A;
+			productRefGroup = 5E788C302244A2DF00D0D00A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E788C2E2244A2DF00D0D00A /* coffeemeetsboba */,
+				5E788C422244A2E700D0D00A /* coffeemeetsbobaTests */,
+				5E788C4D2244A2E700D0D00A /* coffeemeetsbobaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E788C2D2244A2DF00D0D00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E3746A6227BE94800D65473 /* Montserrat-Bold.ttf in Resources */,
+				5E788C3D2244A2E500D0D00A /* LaunchScreen.storyboard in Resources */,
+				5E5D0249226924A600CBAEDB /* Montserrat-Regular.ttf in Resources */,
+				5E5D024122691A1300CBAEDB /* Montserrat in Resources */,
+				5E5D023D225FFF7200CBAEDB /* OverlayView.xib in Resources */,
+				5E788C3A2244A2E500D0D00A /* Assets.xcassets in Resources */,
+				5E5D02472269242100CBAEDB /* Caveat-Regular.ttf in Resources */,
+				5E3746A5227BE94200D65473 /* Montserrat-SemiBold.ttf in Resources */,
+				5E788C382244A2DF00D0D00A /* Main.storyboard in Resources */,
+				5E5D02452269241400CBAEDB /* Montserrat-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E788C412244A2E700D0D00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E788C4C2244A2E700D0D00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		395DAB3C800018ABAA6CAA3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coffeemeetsboba/Pods-coffeemeetsboba-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/BDBOAuth1Manager/BDBOAuth1Manager.framework",
+				"${BUILT_PRODUCTS_DIR}/CDYelpFusionKit/CDYelpFusionKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Chatto/Chatto.framework",
+				"${BUILT_PRODUCTS_DIR}/ChattoAdditions/ChattoAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/TTFortuneWheel/TTFortuneWheel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDBOAuth1Manager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CDYelpFusionKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chatto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChattoAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTFortuneWheel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coffeemeetsboba/Pods-coffeemeetsboba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6071F545F1B800D0DF17AED7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coffeemeetsbobaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F159B2EA980FD415DB823CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coffeemeetsboba-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB7269B9D45A1B0D7B67A55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coffeemeetsbobaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E788C2B2244A2DF00D0D00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF4A582226FEE21003EAAC6 /* BaseMessageCollectionViewCellAvatarStyle.swift in Sources */,
+				0BF4A586226FF0CB003EAAC6 /* BaseMessageHandler.swift in Sources */,
+				5EB5DFD4225BE90C000ECCD0 /* restaurantDisplayViewController.swift in Sources */,
+				5E788C7B2248423900D0D00A /* YelpClient.swift in Sources */,
+				0BF4A58C226FF352003EAAC6 /* ToffeeChatItemsDecorator.swift in Sources */,
+				0B80659F225B5DF600E41FF6 /* ChatViewController.swift in Sources */,
+				0B5F939A226AEC9F00CF616F /* ToffeeTextMessageViewModel.swift in Sources */,
+				5EB5DFD22255756D000ECCD0 /* todaysPickViewController.swift in Sources */,
+				0B80659D2256DDF400E41FF6 /* ChatService.swift in Sources */,
+				0BF4A588226FF13D003EAAC6 /* MessagesSelectorProtocol.swift in Sources */,
+				5E788C352244A2DF00D0D00A /* ViewController.swift in Sources */,
+				5E788C7E2248429800D0D00A /* Business.swift in Sources */,
+				0BF4A57E226FCF6E003EAAC6 /* ChatMessageSender.swift in Sources */,
+				0B5F9396226AE5B800CF616F /* SlidingDataSource.swift in Sources */,
+				5E788C332244A2DF00D0D00A /* AppDelegate.swift in Sources */,
+				0BF4A584226FF08C003EAAC6 /* GenericMessageHandler.swift in Sources */,
+				0B80659B2256DDCB00E41FF6 /* FindPeerViewController.swift in Sources */,
+				0B5F939C226AEF0300CF616F /* ToffeeTextMessageModel.swift in Sources */,
+				0BF4A58A226FF1C0003EAAC6 /* BaseMessagesSelector.swift in Sources */,
+				0B80659B2256DDCB00E41FF6 /* FindPeerViewController.swift in Sources */,
+				0B5F9394226AE0CB00CF616F /* ChatDataSource.swift in Sources */,
+				0B5F9398226AE99900CF616F /* ChatMessageFactory.swift in Sources */,
+				0B8065992256DDA400E41FF6 /* MapViewController.swift in Sources */,
+				5E3746A2227B88D100D65473 /* PopupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E788C3F2244A2E700D0D00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E788C482244A2E700D0D00A /* coffeemeetsbobaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E788C4A2244A2E700D0D00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E788C532244A2E700D0D00A /* coffeemeetsbobaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E788C452244A2E700D0D00A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E788C2E2244A2DF00D0D00A /* coffeemeetsboba */;
+			targetProxy = 5E788C442244A2E700D0D00A /* PBXContainerItemProxy */;
+		};
+		5E788C502244A2E700D0D00A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E788C2E2244A2DF00D0D00A /* coffeemeetsboba */;
+			targetProxy = 5E788C4F2244A2E700D0D00A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E788C362244A2DF00D0D00A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E788C372244A2DF00D0D00A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E788C3B2244A2E500D0D00A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E788C3C2244A2E500D0D00A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E788C552244A2E700D0D00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E788C562244A2E700D0D00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E788C582244A2E700D0D00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32318BE3AB302C3DB9998CA1 /* Pods-coffeemeetsboba.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9NN6749TX;
+				INFOPLIST_FILE = coffeemeetsboba/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.coffeemeetsboba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E788C592244A2E700D0D00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 258C0E61600344DB24CDD4DA /* Pods-coffeemeetsboba.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N9NN6749TX;
+				INFOPLIST_FILE = coffeemeetsboba/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.coffeemeetsboba;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E788C5B2244A2E700D0D00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7BFBB03C6A9497D6B6F43B /* Pods-coffeemeetsbobaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coffeemeetsbobaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.coffeemeetsbobaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coffeemeetsboba.app/coffeemeetsboba";
+			};
+			name = Debug;
+		};
+		5E788C5C2244A2E700D0D00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32A0C116D846E1E3AC3AEF2 /* Pods-coffeemeetsbobaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coffeemeetsbobaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.coffeemeetsbobaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coffeemeetsboba.app/coffeemeetsboba";
+			};
+			name = Release;
+		};
+		5E788C5E2244A2E700D0D00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DB0A19CCA6F6414ED0527F /* Pods-coffeemeetsbobaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coffeemeetsbobaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.coffeemeetsbobaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coffeemeetsboba;
+			};
+			name = Debug;
+		};
+		5E788C5F2244A2E700D0D00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF61180B6BC078813167ADA /* Pods-coffeemeetsbobaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = coffeemeetsbobaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iosdecal.coffeemeetsbobaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = coffeemeetsboba;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E788C2A2244A2DF00D0D00A /* Build configuration list for PBXProject "coffeemeetsboba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E788C552244A2E700D0D00A /* Debug */,
+				5E788C562244A2E700D0D00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E788C572244A2E700D0D00A /* Build configuration list for PBXNativeTarget "coffeemeetsboba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E788C582244A2E700D0D00A /* Debug */,
+				5E788C592244A2E700D0D00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E788C5A2244A2E700D0D00A /* Build configuration list for PBXNativeTarget "coffeemeetsbobaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E788C5B2244A2E700D0D00A /* Debug */,
+				5E788C5C2244A2E700D0D00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E788C5D2244A2E700D0D00A /* Build configuration list for PBXNativeTarget "coffeemeetsbobaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E788C5E2244A2E700D0D00A /* Debug */,
+				5E788C5F2244A2E700D0D00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E788C272244A2DF00D0D00A /* Project object */;
+}
